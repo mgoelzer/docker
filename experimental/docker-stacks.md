@@ -16,7 +16,7 @@ support distribution of bundles.
 ## Producing a bundle
 
 The easiest way to produce a bundle is to generate it using `docker-compose`
-from an existing `docker-compose.yml`. Of course, that's just *one* possible way
+(version [1.8.0-rc1](https://github.com/docker/compose/releases/tag/1.8.0-rc1) or higher) from an existing `docker-compose.yml`. Of course, that's just *one* possible way
 to proceed, in the same way that `docker build` isn't the only way to produce a
 Docker image.
 
@@ -32,6 +32,8 @@ From `docker-compose`:
     ```
 
 ## Creating a stack from a bundle
+
+_The commands in this section require [Docker 1.12-experimental](https://experimental.docker.com/) (RC1 or higher)._
 
 A stack is created using the `docker deploy` command:
 
